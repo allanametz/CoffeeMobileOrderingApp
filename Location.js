@@ -1,8 +1,5 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, Button, ImageBackground, TouchableOpacity, NavigatorIOS} from 'react-native';
-import Expo from 'expo';
-import { StackNavigator } from 'react-navigation';
-import MenuScreen from "./Menu";
 
 class Location extends React.Component {
   static navigationOptions = ({ navigation}) => {
@@ -15,22 +12,28 @@ class Location extends React.Component {
   render() {
       return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => this.props.navigation.navigate('MenuScreen')} style={styles.button2}>
+    <ImageBackground
+        source={require('./brick.jpg')}
+        style={styles.brickWall}>
+      <TouchableOpacity onPress={() => this.props.navigation.navigate('CoffeeScreen')} style={styles.button2}>
         <Text style={styles.paragraph}>Bartley</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => this.props.navigation.navigate('MenuScreen')}
+      <TouchableOpacity onPress={() => this.props.navigation.navigate('CoffeeScreen')}
         style={styles.button2}>
-        <Text style={styles.paragraph}>Connelly </Text>
+        <Text style={styles.paragraph}>Connelly</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => this.props.navigation.navigate('MenuScreen')}
+      <TouchableOpacity onPress={() => this.props.navigation.navigate('CoffeeScreen')}
         style={styles.button2}>
-        <Text style={styles.paragraph}>CEER </Text>
+        <Text style={styles.paragraph}>CEER</Text>
       </TouchableOpacity>
-            }} />
+            }} />
+            </ImageBackground>
     </View>
   );
 }
 }
+
+
 
 export default Location;
 const styles = StyleSheet.create({
@@ -46,20 +49,26 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: 'Optima',
   },
+  brickWall:{
+     height: 800,
+     width: 550,
+  },
+
   button2: {
     marginTop:20,
     paddingTop:15,
     paddingBottom:20,
-    marginLeft:30,
-    marginRight:30,
+    marginLeft:20,
+    marginRight:40,
     alignItems: 'center',
     justifyContent: 'center',
-    left: '20%',
+    left: '16%',
+    borderColor: 'grey',
     borderWidth: 2,
     top: 70,
     width: 170,
     height: 170,
-    backgroundColor: '#0A547B',
+    backgroundColor: '#003366',
     borderRadius: 100,
   },
 });
