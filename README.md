@@ -1,10 +1,10 @@
-# sp-18-holy-grounds-mobile-ordering
 
-# Login page that links to a google API
+
+// Login page that links to a google API
 
 ![screen shot 2019-01-06 at 10 27 00 am](https://user-images.githubusercontent.com/26777645/50740093-811a4c00-119e-11e9-97de-cea3fd48694f.png)
 
-# Choose specific Holy Grounds coffeeshop location on Villanova's campus
+// Choose specific Holy Grounds coffeeshop location on Villanova's campus
 
 ![screen shot 2019-01-06 at 10 28 15 am](https://user-images.githubusercontent.com/26777645/50740094-811a4c00-119e-11e9-877c-d38818a5bfd2.png)
 ![screen shot 2019-01-06 at 10 28 30 am](https://user-images.githubusercontent.com/26777645/50740095-811a4c00-119e-11e9-80ca-ae9976ed6a4e.png)
